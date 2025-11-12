@@ -30,10 +30,8 @@ export default function ServicesPage() {
       {
         data.map(dt => {
             return <div key={dt._id}>
-                <Link href={`/services/${dt._id}`}>
                     <img src={dt.service_image} className="h-40 w-40 bg-gray-200 outline-0 border-0" alt="" />
                     <p>{dt.service_name}</p>
-                </Link>
             </div>
         })
       }
